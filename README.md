@@ -12,22 +12,16 @@ This project involves the Term 2 Simulator which can be downloaded [here](https:
 3. kalman_filter.cpp
 4. tool.cpp
 
-main.cpp - communicates with the Term 2 Simulator receiving data measurements, calls a function to run the Kalman filter, calls a function to calculate RMSE
-FusionEKF.cpp - initializes the filter, calls the predict function, calls the update function
-kalman_filter.cpp- defines the predict function, the update function for lidar, and the update function for radar
-tools.cpp- function to calculate RMSE.
-
 
 How the Files Relate to Each Other:
 
-
-| Image	         			|     Prediction	  									| 
+| Items   			|    Description 									| 
 |:-----------------------------:|:-----------------------------------------------------:| 
-| Right of way at next intersection         				| Right of way at next intersection				|                             
-| Priority road  					| Priority  road	 									|
-| Yield				| Yield														|
-| No entry		      			| No entry									|
-| Wild animals crossing				    | Wild animals crossing				|
+| main.cpp        				| communicates with the Term 2 Simulator receiving data measurements, calls a function to run the Kalman filter, calls a function to calculate RMSE			|                             
+| FusionEKF.cpp  					| initializes the filter, calls the predict function, calls the update function								|
+| kalman_filter.cpp |defines the predict function, the update function for lidar, and the update function for radar													|
+| tools.cpp		      			| function to calculate RMSE.							|
+
 
 
 Main.cpp reads in the data and sends a sensor measurement to FusionEKF.cpp
