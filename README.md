@@ -19,6 +19,17 @@ tools.cpp- function to calculate RMSE.
 
 
 How the Files Relate to Each Other:
+
+
+| Image	         			|     Prediction	  									| 
+|:-----------------------------:|:-----------------------------------------------------:| 
+| Right of way at next intersection         				| Right of way at next intersection				|                             
+| Priority road  					| Priority  road	 									|
+| Yield				| Yield														|
+| No entry		      			| No entry									|
+| Wild animals crossing				    | Wild animals crossing				|
+
+
 Main.cpp reads in the data and sends a sensor measurement to FusionEKF.cpp
 FusionEKF.cpp takes the sensor data and initializes variables and updates variables. 
 FusionEKF.cpp has a variable called ekf_, which is an instance of a KalmanFilter class. 
