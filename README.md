@@ -51,7 +51,7 @@ OUTPUT: values provided by the c++ program to the simulator
 
 ---
 # The final result
-![Image1](./IMAGE/image1.png)
+![Image1](./EKF-1.png)
 
 
 
