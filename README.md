@@ -12,21 +12,15 @@ This project involves the Term 2 Simulator which can be downloaded [here](https:
 3. kalman_filter.cpp
 4. tool.cpp
 
-
-How the Files Relate to Each Other:
+What the functions of the files:
 
 | Items   			|    Description 									| 
 |:-----------------------------:|:-----------------------------------------------------:| 
-| main.cpp        				| communicates with the Term 2 Simulator receiving data measurements, calls a function to run the Kalman filter, calls a function to calculate RMSE			|                             
-| FusionEKF.cpp  					| initializes the filter, calls the predict function, calls the update function								|
-| kalman_filter.cpp |defines the predict function, the update function for lidar, and the update function for radar													|
+| main.cpp        				| Communicateing with the Term 2 Simulator receiving data measurements, calling a function to run the Kalman filter, calling a function to calculate RMSE.	It reads in the data and sends a sensor measurement to FusionEKF.cpp		|                             
+| FusionEKF.cpp  					|  Initializeing the filter, calls the predict function, calls the update function. It	takes the sensor data and initializes variables and updates variables. 							|
+| kalman_filter.cpp | Defines the predict function, the update function for lidar, and the update function for radar. It has a variable called ekf_, which is an instance of a KalmanFilter class. 												|
 | tools.cpp		      			| function to calculate RMSE.							|
 
-
-
-Main.cpp reads in the data and sends a sensor measurement to FusionEKF.cpp
-FusionEKF.cpp takes the sensor data and initializes variables and updates variables. 
-FusionEKF.cpp has a variable called ekf_, which is an instance of a KalmanFilter class. 
 The ekf_ will hold the matrix and vector values. You will also use the ekf_ instance to call the predict and update equations.
 The KalmanFilter class is defined in kalman_filter.cpp and kalman_filter.h. 
 
