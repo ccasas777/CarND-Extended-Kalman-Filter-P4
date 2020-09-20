@@ -24,6 +24,12 @@ What the functions of the files:
 The ekf_ will hold the matrix and vector values. You will also use the ekf_ instance to call the predict and update equations.
 The KalmanFilter class is defined in kalman_filter.cpp and kalman_filter.h. 
 
+
+# The basic architecture of the Extended kalman filter with sensor fusion
+
+![Image1](./EKF-2.png)
+
+
 # RUN the Project:
 
 1. mkdir build
@@ -50,7 +56,7 @@ OUTPUT: values provided by the c++ program to the simulator
 
 ---
 # The final result
-![Image1](./EKF-1.png)
+![Image2](./EKF-1.png)
 
 
 
